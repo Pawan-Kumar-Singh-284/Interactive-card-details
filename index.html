@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Interactive card details form</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./index.js" defer></script>
+
+  
+
+</head>
+
+<body>
+  <main>
+
+    <div class="left-wrapper">
+      <div class="front-card-details">
+        <img src="./images/bg-card-front.png" alt="">
+        <div class="overview">
+          <div class="circle-box">
+            <span class="large"></span>
+            <span class="small"></span>
+          </div>
+          <h3 class="card-numbers">0000 0000 0000 0000</h3>
+          <div class="expiry">
+            <h4 class="user-info">Jane Appleseed</h4>
+            <p><span class="month">00</span>/<span class="years">00</span></p>
+          </div>
+
+        </div>
+      </div>
+      <div class="back-card-details">
+        <img src="./images/bg-card-back.png" alt="bg-card-back" />
+        <h4 class="cvv">000</h4>
+      </div>
+    </div>
+
+
+    <div class="right-wrapper">
+      <form class="form" type="submit" action="" >
+        <label for="name">
+          cardholder name
+          <input type="text" id="name" name="name" autocomplete="off"  placeholder="e.g. Jane Appleseed" />
+          <span class="errorValue">Can't be blank</span>
+        </label>
+        <label for="card-number">
+          card number
+          <input type="text" name="number" maxlength="16" id="card-number" placeholder=" e.g. 1234 5678 9123 0000" />
+          <span class="errorValue">Wrong format, you can use numbers only</span>
+        </label>
+        <div class="group-input">
+          <label for="date">
+            exp. date (MM/YY)
+            <div class="flex">
+              <input type="number" max="12" maxlength="2" class="month" name="month" id="date" placeholder="MM" />
+              <input type="number" class="year" placeholder="YY" name="year" maxlength="2" />
+              <span class="errorValue">Can't be blank</span>
+            </div>
+          </label>
+          <label for="cvv-code">
+            CVV
+            <input type="text" name="cvv" id="cvv-code" maxlength="3" placeholder="e.g. 123" />
+            <span class="errorValue">Can't be blank</span>
+          </label>
+        </div>
+        <button type="submit" class="submit-btn">Confirm</button>
+
+
+      </form>
+
+      <div class="welcome">
+        <img src="./images/icon-complete.svg" alt="welcome image">
+        <h2>Thank you!</h2>
+        <p>We've added your card details</p>
+          <button type="button" class="continue">Continue</button>
+      </div>
+    </div>
+
+  </main>
+
+
+
+
+
+
+  </div>
+</body>
+
+</html>
