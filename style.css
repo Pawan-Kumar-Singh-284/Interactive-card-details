@@ -153,6 +153,10 @@ main {
   opacity: 1;
 }
 
+.data{
+  display: flex;
+}
+
 .group-input {
   display: flex;
 }
@@ -162,13 +166,13 @@ main {
 .group-input > label[for="date"] {
   margin-right: 10px;
 }
-.group-input .flex {
+.group-input .data {
   display: flex;
   align-items: flex-start;
   gap: 0px 10px;
   flex-wrap: wrap;
 }
-.group-input .flex input {
+.group-input .data input {
   width: calc(50% - 5px);
 }
 .form button {
