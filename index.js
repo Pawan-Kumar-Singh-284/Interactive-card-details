@@ -91,7 +91,7 @@ formSubmit.addEventListener("submit", async (event) => {
 function visaCard(Number) {
   let regex = new RegExp(/^4[0-9]{12}(?:[0-9]{3})?$/);
 
-  if (VisaCard_Number == null) {
+  if (Number == null) {
     return "false";
   }
 
